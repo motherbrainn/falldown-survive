@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Ball from "../components/Ball";
 import Block from "../components/Block";
 import BlockContainer from "../components/BlockContainer";
 import styles from "../styles/Home.module.css";
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <Ball />
         <BlockContainer blocks={blocks} />
       </main>
     </div>
