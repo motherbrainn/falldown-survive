@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const Ball = () => {
   const intervalRef = useRef<NodeJS.Timer | null>(null);
