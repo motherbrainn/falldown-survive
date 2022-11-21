@@ -1,5 +1,10 @@
-const Block = ({ id }) => {
-  return <div>{`block: ${id}`}</div>;
+interface BlockProps {
+  id: number;
+}
+
+const Block = ({ id }: BlockProps) => {
+  console.log(id);
+  return <div id={`block-${id}`}>{`block: ${id}`}</div>;
 };
 
 export default Block;
